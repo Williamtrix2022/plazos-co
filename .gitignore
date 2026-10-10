@@ -1,0 +1,56 @@
+# ============================================================
+# Plazos.co — .gitignore
+# Monorepo: Python (backend) + Node/Next.js (frontend)
+# ============================================================
+
+# ----- Python / Backend -----
+__pycache__/
+*.py[cod]
+*.so
+*.egg-info/
+dist/
+build/
+.eggs/
+*.egg
+.venv/
+venv/
+env/
+.mypy_cache/
+.ruff_cache/
+.pytest_cache/
+htmlcov/
+.coverage
+.coverage.*
+coverage.xml
+
+# ----- Node / Frontend -----
+node_modules/
+.next/
+out/
+.turbo/
+*.tsbuildinfo
+
+# ----- Entorno y secretos -----
+.env
+.env.*
+!.env.example
+
+# ----- IDEs y editores -----
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+# ----- Docker -----
+docker/volumes/
+
+# ----- Logs -----
+*.log
+logs/
+
+# ----- Datos de prueba locales -----
+*.sqlite3
+data/uploads/
